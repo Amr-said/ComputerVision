@@ -1,204 +1,107 @@
-# Computer Vision Course - Project #1
+# :wave: The Basics of GitHub 
 
----
-# Table of Content
+## 🤓 Course overview and learning outcomes 
 
-| Requiered Part | Title |
-| ----------- | ----------- |
-| [#Part 0](#part-0) | Graphical User Interface - GUI |
-| [#Part 1](#part-1) | Add additive noise to the image |
-| [#Part 2](#part-2) | Filter the noisy image |
-| [#Part 3](#part-3) | Detect edges in the image |
-| [#Part 4](#part-4) | Draw histogram and distribution curve |
-| [#Part 5](#part-5) | Equalize the image |
-| [#Part 6](#part-6) | Normalize the image |
-| [#Part 7](#part-7) | Local and global thresholding |
-| [#Part 8](#part-8) | Transformation from color image to gray scale |
-| [#Part 9](#part-9) | Frequency domain filters |
-| [#Part 10](#part-10) | Hybrid images |
+The goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀
 
----
+## :octocat: Git and GitHub
 
-# Part 0
+Git is a **distributed Version Control System (VCS)**, which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!
 
-## Graphical User Interface - GUI
+GitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.
 
-We display all the requirments in one window
-using the GUI you can change some parameters like:
+GitHub is home to some of the most advanced technologies in the world. Whether you're visualizing data or building a new game, there's a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we'll dig into the rest later.
 
-    1. type of the filter
-    2. noise value
-    3. threshold 
+## :octocat: Understanding the GitHub flow 
 
-![GUI](ScreenShots/gui1.JPG)
-![GUI](ScreenShots/gui2.JPG)
-![GUI](ScreenShots/gui3.JPG)
+The GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.
 
----
+### Repositories
 
-# Part 1
+A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history.  You can work within a repository alone or invite others to collaborate with you on those files.
 
-## Add additive noise to the image
+### Cloning 
 
-We add three different type of noise :
+When a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. 
+To learn more about cloning, read ["Cloning a Repository"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
-* Uniform
-* Guassian
-* Salt & Pepper
+### Committing and pushing
+**Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
 
-You can change between them using combo box and change the amount of noise using slider
+Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
 
-### Uniform
+## 💻 GitHub terms to know 
 
-![Uniform Noise](ScreenShots/Uniform.png)
+### Repositories 
+We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
 
-### Guassian
+Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
+To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
 
-![Gaussian Noise](ScreenShots/Gaussian_Noise.png)
+### Branches
+You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
+To learn more about branching, read ["About Branches"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
 
-### Salt & Pepper
+### Forks
+A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects!
+To learn more about forking, read ["Fork a repo"](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 
-![Salt & Pepper Noise](ScreenShots/Salt&pepper.png)
----
+### Pull requests
+When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
+To learn more about pull requests, read ["About Pull Requests"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). 
 
-# Part 2
 
-## Filter the noisy image using the following low pass filters
+### Issues
+Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
 
-in this section we use function "avgFilter" to manipulate the noisy image with a specific filter we choose and the result is ...
+For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
+You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
+To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
 
-## - original image
+### Your user profile
 
-![original of Image](ScreenShots/Original.png)
+Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
+To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
 
-## - Average filter
+### Using markdown on GitHub 
 
-![Average filter](ScreenShots/Average_filters.png)
+You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
+To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
 
-## - Gaussian filter
+### Engaging with the GitHub community
 
-![Gaussian filter](ScreenShots/Gaussian_filter.png)
+The GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start. 
 
-## - median filters
+#### Starring repositories 
 
-![median filters](ScreenShots/Median_filter.png)
+If you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. 
+To learn  more about starring repositories, read ["Saving Repositories with Stars"](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars). 
 
----
+#### Following users 
 
-# Part 3
+You can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. 
+To learn more about following users, read ["Following People"](https://docs.github.com/en/github/getting-started-with-github/following-people).
 
-## Detect edges in the image using the following masks
+#### Browsing GitHub Explore 
 
-## - Sobel , Roberts , Prewitt and Canny edge detectors
+GitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.
 
-in this section we use function "edgFilters" to manipulate the image with a specific filter we choose and the result is ...
+You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you interact with GitHub the more tailored your Explore view will be. 
 
-## - original pic
+## 📝 Optional next steps 
 
-![original pic](Screenshots/Original.png)
+* Open a pull request and let your teacher know that you’ve finished this course.  
+* Create a new markdown file in this repository. Let them know what you learned and what you are still confused about! Experiment with different styles!
+* Create your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What's your favorite hobby? Learn more about creating your profile README in the document, ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme).
+* Go to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them. 
+* [Let us know what you liked or didn’t like about the content of this course](https://support.github.com/contact/education). What would you like to see more of? What would be interesting or helpful to your learning journey? 
 
-## - Sobel filter
-
-![edge detection Sobel](ScreenShots/SobelEdgeDetection.png)
-
-## - Roberts pic
-
-![edge detection Roberts](ScreenShots/RobertsEdgeDetection.png)
-
-## - Prewitt filters
-
-![edge detection Prewitt](ScreenShots/PrewittEdgeDetection.png)
-
----
-
-# Part 4
-
-## Draw histogram and distribution curve
-
-In this part we've implemented a function called "df" that takes an image data array and return the histogram values for each intensity value.
-
-Using that values to draw a "BarGraphItem" on pyqtgraph we got the following output...
-
-![Histogram of Image](ScreenShots/Histogram.png)
-
----
-
-# Part 5
-
-## Equalize the image
-
-Using the previous histogram to generate a histogram equalization function by looping over the whole image array and equalize the output of the process we got the following image...
-
-![Equalization of Image](ScreenShots/Equalized.png)
-
-You can see the difference in histograms, now it's values distributed over larger range of data.
-
----
-
-# Part 6
-
-## Normalize the image
-
-Normalization process doesn't depend on histogram, as we know.
-
-By calculating the mean and standard deviation for image data array and using the following equation:
-
-`New Value = (Original Value - mean) / std^2`
-
-We got the following image...
-
-![Normalization of Image](ScreenShots/Normalized.png)
-
----
-
-# Part 7
-
-## Local and global thresholding
-
-Global Thresholding: We implemented the global function where it iterates over all the image's pixels and assign it to a new value where it becomes 255 or 0 according to whether or not it's greater than a given threshold provided by the user.
-![Global_thresh_img](Screenshots/Global Thresholding.png)
-Local Thresholding: We implemented the local function to work as it divides the image to many smaller windows where their size is selected by the user, the mean is calculated to the selected window and then is used as the threshold value to this window by applying the same technique used in the global function, the user have the option to choose if a constant is needed to be subtracted from the mean before applying it to the window.
-![Local_thresh_img](Screenshots/Local Thresholding.png)
-
----
-
-# Part 8
-
-## Transformation from color image to gray scale image and plot of R, G, and B histograms with its distribution function (cumulative curve that you use it for mapping and histogram equalization)
-
-The  transformation of a colored image to a gray scale image was done by selecting each corresponding pixel in the 3 channels(ie. RGB) and multiplying these value by certain constant values respectively and add them together. the result is then equal to the pixel value needed to acheive the suitabale grey color for that pixel.
-![Gray_scale_img](Screenshots/RGB Channels.png)
-Where its histogram is displayed as follows
-<!-- ![Gray_histogram](Screenshots/Histogram_gray.png) -->
-
----
-
-# Part 9
-
-## Frequency domain filters (high pass and low pass)
-
-in this section we use function "freqFilters" to manipulate the image with a LPS or HPS in the frequency domain and get the pic back and the result is ...
-
-## - original pic
-
-![original pic](ScreenShots/Original.png)
-
-## - low pass filter
-
-![Low pass filter](ScreenShots/LowPass.png)
-
-
-## - High Pass filter
-![High pass filter](ScreenShots/HighPass.png)
-
----
-
-# Part 10
-
-## Hybrid images
-
-After implementing the high pass and the low pass filters required in part 9, hybrid images could be acheiving by simply applying the high filter on an image and the low pass on another and adding the results of each together to reach the merging between the two images needed.
-
-![Hybrid_imgs](ScreenShots/gui3.JPG)
-
----
+## 📚  Resources 
+* [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
+* [Git and GitHub learning resources](https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources) 
+* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+* [How to use GitHub branches](https://www.youtube.com/watch?v=H5GJfcp3p4Q&feature=youtu.be)
+* [Interactive Git training materials](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
+* [GitHub's Learning Lab](https://lab.github.com/)
+* [Education community forum](https://education.github.community/)
+* [GitHub community forum](https://github.community/)
